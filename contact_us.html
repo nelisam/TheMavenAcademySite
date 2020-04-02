@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <!-- <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css"> -->
+    </head>
+    <body>
+
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <img src="images/maven_academy.png" alt="images">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto justify-content-end">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">
+                          Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-item cart">
+                      <a class="nav-link" href="cart.html">
+                        Cart
+                      </a>
+                    </li>
+                    <li class="nav-item cart">
+                        <a class="nav-link" href="cart.html">
+                          <ion-icon name="basket-outline"></ion-icon><span>0</span>
+                        </a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+
+<section class = "home">
+    <h1>Get in touch with us</h1>
+    <img src="images/contact-banner.png" srcset="images/contact-banner@2x.png 2x, images/contact-banner@3x.png 3x" alt="">
+    <p>Get pumped, get skilled</p>
+</section>
+<section class="container-fluid">
+    <section class="row">
+        <div class="col-lg-6">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+              </nav>
+            <div>
+                <h2>The Maven Academy</h2>
+                <p><strong>Address:</strong></p>
+                <p>Office F01A, Brookside Office Park, 11 Imam Haron Road, <br>Claremont, Western Cape, 7708</p>
+                <p><strong>Say hello:</strong></p>
+                <p><a shref="mailto:hello@themavenacademy.one">hello@themavenacademy.one</a></p>
+                <p>Or call us directly on <a href="tel:+27 21 461 68 17"><strong>+27 21 461 68 17 </strong></a></p>
+                <p>Schedule a call with one of our friendly course consultants and <br>we’ll get back to you within 24 hours.</p>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li>
+                        <img src="images/facebook.svg" alt="facebook">
+                    </li>
+                    <li>
+                        <img src="images/twitter.svg" alt="twitter">
+                    </li>
+                    <li>
+                        <img src="images/instagram.svg" alt="instagram">
+                    </li>
+                </ul>
+            </div>
+        </div>
+          <div class="col-lg-6 answer-form text-center bg-light-blue">
+            <div>
+                <p><strong>Send us an enquiry </strong></p>
+                <p>Schedule a call with one of our friendly course consultants and we’ll get back to you within 24 hours. </p>
+            </div>
+            <form id="frmcontactus" name="frmcontactus" method="post" class="form-error">
+                <div class="form-group">
+                    <input type="text" name="fname" id="fname" class="form-control" placeholder="Your name" data-rule-required="true" data-msg-required="Please enter Your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="lname" id="lname" class="form-control" placeholder="Your surname" data-rule-required="true" data-msg-required="Please enter Your surname">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Your email address" data-rule-required="true" data-rule-email="true" data-msg-required="Please enter your email address" data-msg-email="Please enter a valid email address" autocapitalize="none" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="cnumber" id="cnumber" class="form-control" placeholder="Your contact number" data-rule-required="true" data-rule-number="true" data-msg-required="Please enter Your contact number" data-msg-number="Please enter valid contact Number">
+                </div>
+                <div class="form-group">
+                    <textarea name="query" id="query" class="form-control" rows="5" cols="1" placeholder="Your query" data-rule-required="true" data-msg-required="Please enter Your query"></textarea>
+                </div>
+                <div class="container">
+                    <a href="index.html" class="button small-btn text-center" style="width: 100%;">Send enquiry</a>
+                </div>
+            </form>
+          </div>
+    </section>
+</section>
+
+
+<!----------------------------------------------------------------FOOTER---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <footer>
+            <div class="row upper-footer">
+                <div class="col-sm-3">
+                    <p>GENERAL</p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                  <div class="col-sm-3">
+                    <p>WHY US</p>
+                    <ul>
+                        <li><a href="#">Why Study with us ?</a></li>
+                        <li><a href="#">Financial Aid - Study for Just R1</a></li>
+                        <li><a href="#">Internship - Work, Learn & Earn</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-3">
+                    <p>DEVELOPER COURSES</p>
+                    <ul>
+                        <li><a href="#">Full Stack Web Developer</a></li>
+                        <li><a href="#">Front End Web Fundamentals</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-3">
+                    <p>CONTACT US</p>
+                    <ul> 
+                        <li>
+                            <span><img src="images/phone-icon.svg" alt=""></span>
+                            <a href="#">+27 21 461 68 17</a>
+                        </li>
+                        <li>
+                            <span><img src="images/email-icon.svg" alt=""></span>
+                            <a href="#">hello@themavenacademy.one</a>
+                        </li>
+                        <li>
+                            <span><img src="images/location-icon.svg" alt=""></span>
+                            <a href="#">Office F01A, Brookside Office Park, 11 Imam Haron Road, Claremont, Western Cape, 7708</a>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="lower-footer">
+                <div class="container">
+            <div class="row ">
+                <div class="col-md-7 align-self-center">
+                    <p>All Rights Reserved, Maven Academy (Pty) Ltd.</p>
+                  </div>
+                  <div class="col-md-5 align-self-center">
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <img src="images/facebook.svg" alt="facebook">
+                            </li>
+                            <li>
+                                <img src="images/twitter.svg" alt="twitter">
+                            </li>
+                            <li>
+                                <img src="images/instagram.svg" alt="instagram">
+                            </li>
+                        </ul>
+                    </div>  
+                  </div>
+                </div>
+            </div>
+            </div>
+        </footer>  
+<script src="javascript/main.js"></script>
+<script src="javascript/typingeffect.js"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="javascript/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $('.owl-one').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
+    $('.owl-two').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+
+    $('.owl-three').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+
+    $( ".owl-next").html('<img src="images/arrow-right.svg" />');
+});
+
+
+</script>
+    </body>
+</html>
