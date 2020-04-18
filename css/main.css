@@ -31,7 +31,6 @@ header a {
     font-stretch: normal;
     line-height: 1.67;
     letter-spacing: normal;
-
   }
 
 
@@ -55,7 +54,7 @@ header a {
   }
 
   nav {
-    color: #cfd8dd;
+    color: #ffffff;
     text-decoration: none;
     display: inline-block;
     padding: 24px 58px 26px 0;
