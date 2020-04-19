@@ -135,8 +135,8 @@ function displayCart() {
         });
 
         productContainer.innerHTML += `
-            <div class="cartTotalContainer">
-                <h4 class="cartTotalTitle">Cart Total</h4>
+            <div class="cartTotalContainer"> 
+                <h4 class="cartTotalTitled">Cart Total</h4> 
                 <h4 class="cartTotal">R${cart},00</h4>
             </div>`
 

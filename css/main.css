@@ -79,14 +79,15 @@ header a {
   }
 
 .cart ion-icon {
- background-color: #cfd8dd;
+ background-color: #ffffff;
  border-radius: 50%;
  height: 30px;
  width: 30px;
+ color: #36414c;
 }
 
 .cart span {
-    background-color: #cfd8dd; 
+    background-color: #ffffff; 
     border-radius: 50%; 
     vertical-align: top;
     margin-left: -1.5px;
@@ -146,6 +147,33 @@ span {
     top:1px;
   }
 
+  .white-button {
+    background-color:#ffffff;
+    border-radius:40px;
+    -webkit-border-radius: 40px;
+    -moz-box-border-radius: 40px;
+    -o-border-radius: 40px;
+    border:2px solid #5b9de3;
+    display:inline-block;
+    cursor:pointer;
+    color:#5b9de3;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-size:18px;
+    padding: 10px 30px 12px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #5b9de3;
+  }
+  .white-button:hover {
+    background-color:#5b9de3;
+    border: 2px solid #60a0e3;
+    color: #ffffff;
+    text-decoration:none;
+  }
+  .white-button:active {
+    position:relative;
+    top:1px;
+  }
 
 
    /*-------------------------------------BUTTON SIZES-------------------------------------*/
@@ -335,6 +363,7 @@ span {
     line-height: 1.43;
     text-transform: uppercase;
     margin-bottom: 30px;
+    margin-left: 40px;
 }
 
 .upper-footer ul {
@@ -463,21 +492,6 @@ span {
 .cartTotal {
     width: 10%;
 }
-
-/* .increase:before {
-  color: orange;
-} */
-
-.small-icon {
-    color: orange;
-}
-/* .ion-lg:before {
-    position: relative;
-    font-size: 1.33333em;
-    line-height: 0.75em;
-    vertical-align: -15%;
-  } */
-
 
 
 
