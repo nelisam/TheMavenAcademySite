@@ -1,4 +1,4 @@
-# project
+# TheMavenAcademySite
 Creating Maven Academy website with a shopping cart
 
 # Setup:
