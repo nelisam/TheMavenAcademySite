@@ -20,7 +20,7 @@ header {
 /* ----------------------------------------nav--------------------------------------------*/
 
 header a {
-    color: #ffffff;
+    color: #ffffff !important; 
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -47,6 +47,7 @@ header a {
     background: #5b9de3;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
+    
   }
   header a:hover:after { 
     width: 100%; 
@@ -230,6 +231,8 @@ span {
     border-radius: 5px;
     padding: 80px 60px;
 }
+
+
 
 /* ----------------------------------------section Career Services----------------------------------------*/
 
