@@ -11,7 +11,7 @@ Creating Maven Academy website with a shopping cart
 * Bootstrap
 
 ## View the website:
-Browser: https://nelisam.github.io/project/
+Browser: https://nelisam.github.io/TheMavenAcademySite/
 
 
 
