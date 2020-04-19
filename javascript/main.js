@@ -9,19 +9,19 @@ let products = [
     },
     {
         name: 'Frontend Developer',
-        tag: 'frontend-dev', //use to grab the image
+        tag: 'frontenddeveloper', //use to grab the image
         price: 26000,
         inCart: 0 //track how many items
     },
     {
-        name: 'Ui-Ux Designer',
-        tag: 'ui-ux-designer', //use to grab the image
+        name: 'Ui Ux Designer',
+        tag: 'uiuxdesigner', //use to grab the image
         price: 26000,
         inCart: 0 //track how many items
     },
     {
         name: 'Java Spring Boot',
-        tag: 'spring-boot-dev', //use to grab the image
+        tag: 'javaspringboot', //use to grab the image
         price: 26000,
         inCart: 0 //track how many items
     }
@@ -89,6 +89,8 @@ function setItems(product) {
     localStorage.setItem('productsInCart', JSON.stringify(cartItems));
 }
 
+
+//Calculate Total Cost
 function totalCost( product, action ) {
     let cart = localStorage.getItem("totalCost");
 
@@ -106,6 +108,7 @@ function totalCost( product, action ) {
     }
 }
 
+// Display Cart function
 function displayCart() {
     let cartItems = localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
@@ -119,12 +122,14 @@ function displayCart() {
         productContainer.innerHTML = '';
         Object.values(cartItems).map( (item, index) => {
             productContainer.innerHTML += 
-            `<div class="product"><ion-icon name="close-circle"></ion-icon><img src="./images/${item.tag}.png" />
+            `<div class="product"><ion-icon name="close-outline" size="small"></ion-icon><img src="./images/${item.tag}.png" />
                 <span class="sm-hide">${item.name}</span>
             </div>
             <div class="price sm-hide">R${item.price},00 Excl Vat</div>
             <div class="quantity">
-                    <span>${item.inCart}</span>   
+                <ion-icon class="decrease" size="small" name="arrow-back-outline"></ion-icon>
+                    <span>${item.inCart}</span> 
+                <ion-icon class="increase" size="small" name="arrow-forward-outline"></ion-icon>  
             </div>
             <div class="total">R${item.inCart * item.price},00 Excl Vat</div>`;
         });
@@ -140,6 +145,7 @@ function displayCart() {
     }
 }
 
+//Increase & Decrease Function
 function manageQuantity() {
     let decreaseButtons = document.querySelectorAll('.decrease');
     let increaseButtons = document.querySelectorAll('.increase');
@@ -181,6 +187,7 @@ function manageQuantity() {
     }
 }
 
+//Delete Button Function
 function deleteButtons() {
     let deleteButtons = document.querySelectorAll('.product ion-icon');
     let productNumbers = localStorage.getItem('cartNumbers');

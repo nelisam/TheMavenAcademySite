@@ -464,7 +464,19 @@ span {
     width: 10%;
 }
 
+/* .increase:before {
+  color: orange;
+} */
 
+.small-icon {
+    color: orange;
+}
+/* .ion-lg:before {
+    position: relative;
+    font-size: 1.33333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+  } */
 
 
 
