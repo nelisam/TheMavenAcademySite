@@ -482,10 +482,8 @@ span {
 }
 
 .cartTotalContainer {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
     padding: 10px 0;
+    margin-left: 65%;
 }
 
 .cartTotalTitle {

@@ -135,14 +135,27 @@ function displayCart() {
         });
 
         productContainer.innerHTML += `
-            <div class="cartTotalContainer"> 
-                <p class="cartTotalTitle">Cart Total</p> 
-                <p class="cartTotal">R${cart},00</p><br>
-                <p class="cartTotalTitle">Vat</p> 
-                <p class="cartTotal">R${cart * 0.15},00</p><br>
-                <p class="cartTotalTitle">Total</p> 
-                <p class="cartTotal">R${(cart * 1.15).toFixed(0)},00</p>
-            </div>`
+        <div class= "cartTotalContainer justify-content-end">     
+            <table>
+                <tr>
+
+                    <td><h5 class = "cartTotalTitle">Subtotal</h6></td>
+                    <td class="text-right"><h6>R${cart},00 <small>excl Vat</small></h5></td>
+                </tr>
+                <tr>
+
+                    <td><h5 class = "cartTotalTitle">Vat<small>(15%)</small></h5></td>
+                    <td><h6>R${cart * 0.15},00</h6></td>
+                </tr>
+                <tr>
+
+                    <td><h5 class = "cartTotalTitle">Total</h5></td>
+                    <td class="text-right"><h6>R${(cart * 1.15).toFixed(0)},00 <small>incl Vat</small></h6></td>
+                </tr>
+            </table>
+        </div> 
+            
+            `
 
         deleteButtons();
         manageQuantity();
