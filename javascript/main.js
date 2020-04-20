@@ -136,8 +136,12 @@ function displayCart() {
 
         productContainer.innerHTML += `
             <div class="cartTotalContainer"> 
-                <h4 class="cartTotalTitled">Cart Total</h4> 
-                <h4 class="cartTotal">R${cart},00</h4>
+                <p class="cartTotalTitle">Cart Total</p> 
+                <p class="cartTotal">R${cart},00</p><br>
+                <p class="cartTotalTitle">Vat</p> 
+                <p class="cartTotal">R${cart * 0.15},00</p><br>
+                <p class="cartTotalTitle">Total</p> 
+                <p class="cartTotal">R${(cart * 1.15).toFixed(0)},00</p>
             </div>`
 
         deleteButtons();
